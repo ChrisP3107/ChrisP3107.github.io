@@ -1,2 +1,2 @@
-# ChrisP3107.github.io
+# Assignment Three
 Designing for Screens – Assignment Three: Omona

@@ -64,16 +64,14 @@ body {
   flex-direction: column;
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  grid-column: 8 / span 5;
+li {
+  margin: 0;
 }
 
 nav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-left: 3rem;
 }
 
 /* Header */
@@ -84,6 +82,13 @@ nav {
 .text-wrapper {
   grid-column: 2 / span 3;
   padding: 1.25rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 8 / span 5;
 }
 
 /* Section 1: Product Category */
@@ -148,7 +153,7 @@ nav {
   padding-top: 9.375rem;
 }
 
-a {
+.shop-link a {
   font-family: "trade-gothic-next", sans-serif;
   color: var(---black);
   text-decoration: none;
@@ -171,6 +176,16 @@ a {
   align-content: center;
 }
 
+.h-list ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  list-style: none;
+}
+}
+
 /* Section 5: Contact */
 .contact {
   grid-column: 2 / span 5;
@@ -185,27 +200,47 @@ a {
 .site-footer {
   height: auto;
   position: relative;
-  margin: 10.41vw 0 3.47vw;
-}
-
-.c-columns:nth-child(1) {
-  position: relative;
+  margin-left: 3rem;
 }
 
 .c-columns {
   display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  grid-column: 1 / span 2;
 }
 
 .c-column {
-  width: 100%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 20%;
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 20.33%;
+  overflow: hidden;
   position: relative;
   padding-bottom: 8.33vw;
 }
 
 .f-heading {
   margin-bottom: 2.08vw;
+}
+
+.site-footer li {
+  list-style-type: none;
+  opacity: .6;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .34vw 0;
+  position: relative;
+  will-change: opacity;
+  backface-visibility: hidden;
+  transition: opacity 250ms ease-out;
+}
+
+.c-column a {
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-column ul {
+  padding: 0;
 }

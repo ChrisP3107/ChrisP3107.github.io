@@ -1,5 +1,6 @@
 /*Script Import*/
 @import "_typography.css";
+@import "main.js";
 
 /* Background Colour Variables */
 :root {
@@ -71,7 +72,7 @@ li {
 nav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 /* Header */
@@ -164,11 +165,12 @@ nav ul {
 /* Section 4: Shop */
 .shop-collection {
   grid-column: 1 /span 6;
-  min-height: 650px;
 }
 
 .s-description {
   grid-column: 8 / span 4;
+  padding: 0;
+  margin: 0;
 }
 
 .product-style-container {
@@ -177,18 +179,12 @@ nav ul {
 }
 
 .h-list ul {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  margin-left: -8px;
-  margin-right: -8px;
-  list-style: none;
-}
+
 }
 
 /* Section 5: Contact */
 .contact {
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 4;
 }
 
 .h-contact {
@@ -200,12 +196,19 @@ nav ul {
 .site-footer {
   height: auto;
   position: relative;
-  margin-left: 3rem;
+  width: 100%;
+  padding-top: 5rem;
+  margin-left: 2rem;
+}
+
+.f-heading {
+  margin-bottom: 2.08vw;
 }
 
 .c-columns {
   display: flex;
   position: relative;
+  margin-left: 1.4rem;
   grid-column: 1 / span 2;
 }
 
@@ -219,8 +222,18 @@ nav ul {
   padding-bottom: 8.33vw;
 }
 
-.f-heading {
-  margin-bottom: 2.08vw;
+.d-columns {
+  display: inline-flex;
+  width: 100%;
+}
+
+.d-column {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 8.33vw;
 }
 
 .site-footer li {
@@ -228,7 +241,7 @@ nav ul {
   opacity: .6;
   cursor: pointer;
   font-size: 1rem;
-  padding: .34vw 0;
+  padding: .35vw 0;
   position: relative;
   will-change: opacity;
   backface-visibility: hidden;
@@ -243,4 +256,8 @@ nav ul {
 
 .c-column ul {
   padding: 0;
+}
+
+.d-column ul {
+  padding: 0 1.5rem;
 }

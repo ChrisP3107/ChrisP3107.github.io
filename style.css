@@ -8,7 +8,7 @@
   ---blue: #57CEF7;
   ---yellow: #EEE76B;
 }
-
+@@import "_1_color-swatches.js";
 /* Media Query for Screen Size */
 @media screen
   and (min-device-width: 1200px)
@@ -90,6 +90,13 @@ h3 {
   text-align: center;
 }
 
+h6 {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
 p, li {
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 400;
@@ -102,6 +109,7 @@ p, li {
 }
 
 .text-wrapper {
+  grid-column: 2 / span 3;
   padding: 1.25rem 0;
 }
 
@@ -155,11 +163,11 @@ p, li {
   padding-bottom: 50%;
 }
 
-.h-summary {
+.h-summary, .h-contact {
   font-size: 2.8125rem;
 }
 
-.p-summary {
+.p-summary, .p-contact {
   font-size: 1.25rem;
 }
 
@@ -178,6 +186,7 @@ a {
 /* Section 4: Shop */
 .shop-collection {
   grid-column: 1 /span 6;
+  min-height: 650px;
 }
 
 .s-description {
@@ -186,15 +195,43 @@ a {
 
 .product-style-container {
   grid-column: 8 / span 4;
-  position: relative;
-  margin-top:2rem;
-}
-
-.button-wrapper {
-  display: inline-block;
-  position: relative;
+  align-content: center;
 }
 
 /* Section 5: Contact */
+.contact {
+  display: inline-flex;
+}
+
+.h-contact {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+}
 
 /* Section 6: Footer */
+.site-footer {
+  height: auto;
+  position: relative;
+  margin: 10.41vw 0 3.47vw;
+}
+
+.c-columns:nth-child(1) {
+  position: relative;
+}
+
+.c-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-column {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
+  position: relative;
+  padding-bottom: 8.33vw;
+}
+
+.f-heading {
+  margin-bottom: 2.08vw;
+}

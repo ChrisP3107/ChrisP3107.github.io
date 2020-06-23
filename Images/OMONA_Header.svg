@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eee76b;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #57cef7;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <path class="cls-1" d="M7,546L348,299l421,733H5Z" transform="translate(-7 -4)"/>
+    <path class="cls-2" d="M790,1L4-1V654Z" transform="translate(-7 -4)"/>
+  </g>
+</svg>

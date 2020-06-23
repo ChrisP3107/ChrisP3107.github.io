@@ -1,6 +1,5 @@
 /*Script Import*/
 @import "_typography.css";
-@import "main.js";
 
 /* Background Colour Variables */
 :root {
@@ -56,13 +55,20 @@
 }
 
 /* Global Code */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
+  width: 100%;
   height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 li {
@@ -76,13 +82,42 @@ nav {
 }
 
 /* Header */
+.header {
+  background: url("../images/OMONA_Header.svg") no-repeat;
+  background-color: var(---red);
+  height: 100%;
+}
+
+.logo-wrapper {
+  grid-column: 1 / span 3;
+}
+
+.logo {
+  object-position: 50% 50%;
+  max-width: 100%;
+}
+
 .heading-wrapper {
+  padding-top: 10rem;
   grid-column: 5 / span 7;
 }
 
 .text-wrapper {
   grid-column: 2 / span 3;
   padding: 1.25rem 0;
+}
+
+h1 {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 nav ul {
@@ -92,8 +127,21 @@ nav ul {
   grid-column: 8 / span 5;
 }
 
+nav li {
+  list-style-type: none;
+  max-width: 25px;
+  max-height: 25px;
+  fill: #FFF;
+}
+
 /* Section 1: Product Category */
+.product {
+  background-color: var(---blue);
+  height: 100%;
+}
+
 .f-category {
+  padding-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -113,6 +161,10 @@ nav ul {
 }
 
 /* Section 2: Materials */
+.materials {
+  background-color: var(---red);
+}
+
 .materials, .product, .s-collection {
   height: 100%;
   overflow: hidden;
@@ -121,6 +173,7 @@ nav ul {
 }
 
 .m-column {
+  padding-top: 10rem;
   z-index: 2;
   float: left;
   height: 100%;
@@ -129,17 +182,27 @@ nav ul {
   position: relative;
 }
 
+.m-column h3 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
 /* Section 3: Product Summary */
+.f-summary {
+  background-color: var(---blue);
+  height: 100%;
+}
+
 .summary {
   grid-column: 7 / span 4;
+  align-self: center;
 }
 
 .image-summary {
   grid-column: 2 / span 4;
-  z-index: 1;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 50%;
+  background: url("../images/DSC_0704_20.png") no-repeat center center;
+  background-size: cover;
+  max-height: 100%;
 }
 
 .h-summary, .h-contact {
@@ -147,6 +210,7 @@ nav ul {
 }
 
 .p-summary, .p-contact {
+  padding-top: 2rem;
   font-size: 1.25rem;
 }
 
@@ -159,30 +223,57 @@ nav ul {
   color: var(---black);
   text-decoration: none;
   background-color: var(---blue);
-  padding: 1em 1.5em;
+  padding: 1em 0;
 }
 
 /* Section 4: Shop */
+.collection {
+  background-color: var(---yellow);
+  height: 100%;
+}
+
 .shop-collection {
-  grid-column: 1 /span 6;
+  grid-column: 2 /span 6;
+}
+
+.shop-collection img {
+  max-height: 500px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 20px 15px -15px rgba(#000, .5);
 }
 
 .s-description {
   grid-column: 8 / span 4;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 
 .product-style-container {
-  grid-column: 8 / span 4;
-  align-content: center;
+	grid-column: 8 / span 4;
 }
 
-.h-list ul {
+select {
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid var(---yellow);
+  font-weight: bold;
+  border-radius: 0;
+}
 
+select:focus, select:active {
+  outline: 0;
+  border-bottom-color: var(---red);
 }
 
 /* Section 5: Contact */
+.f-contact {
+  background-color: var(---yellow);
+  height:100%;
+}
+
 .contact {
   grid-column: 2 / span 4;
 }

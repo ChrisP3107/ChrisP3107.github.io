@@ -223,7 +223,9 @@ nav li {
   color: var(---black);
   text-decoration: none;
   background-color: var(---blue);
-  padding: 1em 0;
+  border-bottom: 1px solid var(---black);
+  padding-bottom: 1rem;
+  padding-right: 5rem;
 }
 
 /* Section 4: Shop */
@@ -232,22 +234,31 @@ nav li {
   height: 100%;
 }
 
+.collection-container {
+  grid-column: 8 / span 4;
+  align-items: center;
+}
+
 .shop-collection {
   grid-column: 2 /span 6;
 }
 
 .shop-collection img {
   max-height: 500px;
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 20px 15px -15px rgba(#000, .5);
 }
 
 .s-description {
-  grid-column: 8 / span 4;
-  align-items: center;
+  grid-column: 8 / span 3;
   padding: 0;
   margin: 0;
+}
+
+.s-description h3 {
+  margin-bottom: 1.5rem;
+}
+
+.s-description p {
+  margin-bottom: 2rem;
 }
 
 .product-style-container {
@@ -255,10 +266,12 @@ nav li {
 }
 
 select {
+  margin-top: 2rem;
   margin-bottom: 1em;
-  padding: .25em;
+  padding: 1rem 0.5rem;
+  background-color: var(---yellow);
   border: 0;
-  border-bottom: 2px solid var(---yellow);
+  border-bottom: 2px solid var(---blue);
   font-weight: bold;
   border-radius: 0;
 }
@@ -266,6 +279,18 @@ select {
 select:focus, select:active {
   outline: 0;
   border-bottom-color: var(---red);
+}
+
+.add-cart {
+  margin-top: 10rem;
+}
+
+.add-cart a {
+  font-family: "trade-gothic-next", sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  background-color: var(---red);
+  padding: 1rem 10rem;
 }
 
 /* Section 5: Contact */
@@ -283,6 +308,31 @@ select:focus, select:active {
   font-weight: 700;
 }
 
+.social-link {
+  margin-top: 5rem;
+}
+
+.social-link button {
+  font-family: "trade-gothic-next", sans-serif;
+  font-size: 1rem;
+  color: var(---black);
+  text-decoration: none;
+  background-color: var(---yellow);
+  border: none;
+  border-bottom: 1px solid var(---black);
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
 /* Section 6: Footer */
 .site-footer {
   height: auto;
@@ -293,7 +343,7 @@ select:focus, select:active {
 }
 
 .f-heading {
-  margin-bottom: 2.08vw;
+  margin-bottom: 1rem;
 }
 
 .c-columns {
@@ -307,10 +357,15 @@ select:focus, select:active {
   float: left;
   display: inline-block;
   height: 100%;
-  width: 20.33%;
+  width: 15.33%;
   overflow: hidden;
   position: relative;
   padding-bottom: 8.33vw;
+}
+
+.c-column:nth-child(4) {
+  margin-left: 15rem;
+  width: 25%;
 }
 
 .d-columns {
@@ -351,4 +406,28 @@ select:focus, select:active {
 
 .d-column ul {
   padding: 0 1.5rem;
+}
+
+.email-input {
+  display: inline-block;
+}
+
+input[type="email"]{
+  cursor: text;
+  text-align: start;
+  text-rendering: auto;
+  margin-bottom: 1em;
+  height: 2.5rem;
+  width: 20rem;
+  border: 0;
+  border-bottom: 1px solid var(---black);
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.c-column p {
+  font-size: 0.9375rem;
 }

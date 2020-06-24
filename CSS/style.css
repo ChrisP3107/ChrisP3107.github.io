@@ -280,7 +280,7 @@ button:hover {
 
 .shop-collection {
   grid-column: 2 /span 6;
-  background-image: url("../images/Bear.jpg") no-repeat center center;
+  background-image: url("../images/Bear.jpg"); no-repeat center center;
   background-size: cover;
   max-width: 500px;
   max-height: 500px;

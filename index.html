@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>O M O N A</title>
     <link rel="stylesheet" href="https://use.typekit.net/enk7fqv.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
  <body>
    <div id="" class="header">
@@ -121,7 +121,7 @@
           <div class="number-increment">
             <form class="" action="index.html" method="get">
               <div class="quantity-input">
-                <input type="number" name="quantity" id="quantity" value="1">
+                <input type="number" name="quantity" id="quantity" min = "1" value="1">
               </div>
             </form>
           </div>
@@ -245,6 +245,16 @@
       if (window.history.replaceState) {
       window.history.replaceState( null, null, window.location.href);
       }
+  </script>
+  <script type="text/javascript">
+  var number = document.getElementById('quantity');
+  number.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58)
+        || e.keyCode == 8)) {
+              return false;
+            }
+          }
   </script>
 <!------------->
  </body>

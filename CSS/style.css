@@ -1,5 +1,5 @@
 /*Script Import*/
-@import "_typography.css";
+@import "CSS/_typography.css";
 /* Background Colour Variables */
 :root {
   ---black: #000000;

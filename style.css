@@ -1,6 +1,3 @@
-/*Script Import*/
-@import "_typography.css";
-
 /* Background Colour Variables */
 :root {
   ---black: #000000;
@@ -64,6 +61,43 @@ nav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   margin-left: 2rem;
+}
+
+/* Typography */
+h1 {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.125rem;
+}
+
+h3 {
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h6 {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+p, li {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 /* Header */

@@ -67,7 +67,7 @@ nav {
 
 /* Header */
 .header {
-  background: url("../images/OMONA_Header.svg") no-repeat;
+  background: url("../Images/OMONA_Header.svg") no-repeat;
   background-color: var(---red);
   height: 100%;
   z-index: -3;
@@ -223,7 +223,7 @@ a:hover img {
 
 .image-summary {
   grid-column: 2/span 4;
-  background: url("../images/DSC_0704_20.png") no-repeat center center;
+  background: url("../Images/DSC_0704_20.png") no-repeat center center;
   background-size: cover;
   max-height: 100%;
 }
@@ -270,7 +270,7 @@ button:hover {
 
 .shop-collection {
   grid-column: 2/span 6;
-  background-image: url("../images/Bear.jpg");
+  background-image: url("../Images/Bear.jpg");
   background-size: cover;
   max-width: 500px;
   max-height: 500px;

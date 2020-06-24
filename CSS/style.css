@@ -1,6 +1,5 @@
 /*Script Import*/
 @import "_typography.css";
-
 /* Background Colour Variables */
 :root {
   ---black: #000000;
@@ -13,35 +12,27 @@
 }
 
 /* Media Query for Screen Size */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .grid {
-      display: grid;
-      position: relative;
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: 20px;
-      width: 100%;
-      max-width: 1400px;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+  }
 }
-
-@media only screen
-  and (min-device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .grid {
-      display: grid;
-      position: relative;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
-      width: 100%;
-      padding-right: 30px;
-      padding-left: 30px;
-    }
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
-
 /* Global Code */
 * {
   margin: 0;
@@ -76,14 +67,14 @@ nav {
 
 /* Header */
 .header {
-  background: url("../Images/OMONA_Header.svg") no-repeat;
+  background: url("../images/OMONA_Header.svg") no-repeat;
   background-color: var(---red);
   height: 100%;
   z-index: -3;
 }
 
 .logo-wrapper {
-  grid-column: 1 / span 3;
+  grid-column: 1/span 3;
 }
 
 .logo-wrapper svg {
@@ -92,11 +83,11 @@ nav {
 
 .heading-wrapper {
   padding-top: 8rem;
-  grid-column: 5 / span 7;
+  grid-column: 5/span 7;
 }
 
 .text-wrapper {
-  grid-column: 2 / span 3;
+  grid-column: 2/span 3;
   padding: 5.25rem 0;
 }
 
@@ -112,12 +103,11 @@ h1 {
     opacity: 1;
   }
 }
-
 nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-column: 9 / span 3;
+  grid-column: 9/span 3;
 }
 
 nav li {
@@ -152,7 +142,7 @@ nav li svg {
 .heading-xxl {
   display: inline;
   font-size: 6.875rem;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 a {
@@ -160,7 +150,7 @@ a {
   font-weight: 700;
   color: var(---black);
   text-decoration: none;
-  transition: color 0.5s cubic-bezier(0.61,0.32,0.41,0.85);
+  transition: color 0.5s cubic-bezier(0.61, 0.32, 0.41, 0.85);
 }
 
 a img {
@@ -227,12 +217,12 @@ a:hover img {
 }
 
 .summary {
-  grid-column: 7 / span 4;
+  grid-column: 7/span 4;
   align-self: center;
 }
 
 .image-summary {
-  grid-column: 2 / span 4;
+  grid-column: 2/span 4;
   background: url("../images/DSC_0704_20.png") no-repeat center center;
   background-size: cover;
   max-height: 100%;
@@ -264,7 +254,7 @@ a:hover img {
 }
 
 button:hover {
-  transition: transform 0.2s cubic-bezier(0.61,0.32,0.41,0.85);
+  transition: transform 0.2s cubic-bezier(0.61, 0.32, 0.41, 0.85);
 }
 
 /* Section 4: Shop */
@@ -274,20 +264,20 @@ button:hover {
 }
 
 .collection-container {
-  grid-column: 8 / span 4;
+  grid-column: 8/span 4;
   align-items: center;
 }
 
 .shop-collection {
-  grid-column: 2 /span 6;
-  background-image: url("../images/Bear.jpg"); no-repeat center center;
+  grid-column: 2/span 6;
+  background-image: url("../images/Bear.jpg");
   background-size: cover;
   max-width: 500px;
   max-height: 500px;
 }
 
 .s-description {
-  grid-column: 8 / span 3;
+  grid-column: 8/span 3;
   padding: 0;
   margin: 0;
 }
@@ -301,7 +291,7 @@ button:hover {
 }
 
 .product-style-container {
-	grid-column: 8 / span 4;
+  grid-column: 8/span 4;
 }
 
 .button-wrapper {
@@ -313,7 +303,7 @@ form {
 }
 
 .quantity-input {
-  grid-column: 9 / span 1;
+  grid-column: 9/span 1;
 }
 
 input[type=number] {
@@ -363,11 +353,11 @@ select:focus, select:active {
 /* Section 5: Contact */
 .f-contact {
   background-color: var(---yellow);
-  height:100%;
+  height: 100%;
 }
 
 .contact {
-  grid-column: 2 / span 4;
+  grid-column: 2/span 4;
 }
 
 .h-contact {
@@ -417,7 +407,7 @@ button:focus {
   display: flex;
   position: relative;
   margin-left: 1.4rem;
-  grid-column: 1 / span 2;
+  grid-column: 1/span 2;
 }
 
 .c-column {
@@ -451,10 +441,10 @@ button:focus {
 
 .site-footer li {
   list-style-type: none;
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
   font-size: 1rem;
-  padding: .35vw 0;
+  padding: 0.35vw 0;
   position: relative;
   transition: opacity 250ms ease-out;
 }
@@ -477,7 +467,7 @@ button:focus {
   display: inline-block;
 }
 
-input[type="email"]{
+input[type=email] {
   cursor: text;
   text-align: start;
   text-rendering: auto;

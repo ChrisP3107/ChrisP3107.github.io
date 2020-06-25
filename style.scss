@@ -7,6 +7,7 @@
   ---red: #DC7C6E;
   ---blue: #57CEF7;
   ---yellow: #EEE76B;
+  ---pink: #FBD1E5;
 }
 
 /* Media Query for Screen Size */
@@ -31,10 +32,26 @@
     padding-left: 30px;
   }
 }
+
+@media screen and (min-width: 0) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
 /* Global Code */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -79,7 +96,7 @@ h2 {
 }
 
 h3 {
-  font-family: futura-pt,sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 2.5rem;
@@ -103,7 +120,7 @@ p, li {
 /* Header */
 .header {
   background: url("Images/OMONA_Header.svg") no-repeat;
-  background-color: var(---red);
+  background-color: var(---pink);
   height: 100%;
   z-index: -3;
 }
@@ -123,7 +140,7 @@ p, li {
 
 .text-wrapper {
   grid-column: 2/span 3;
-  padding: 5.25rem 0;
+  padding: 3.25rem 0;
 }
 
 h1 {
@@ -176,7 +193,7 @@ nav li svg {
 
 .heading-xxl {
   display: inline;
-  font-size: 6.875rem;
+  font-size: 6.25rem;
   opacity: 0.9;
 }
 
@@ -210,7 +227,7 @@ a img::after {
 }
 
 a:hover {
-  color: var(---red);
+  color: #FFFFFF;
   z-index: 2;
 }
 
@@ -220,7 +237,7 @@ a:hover img {
 
 /* Section 2: Materials */
 .materials {
-  background-color: var(---red);
+  background-color: var(---pink);
 }
 
 .materials, .product, .s-collection {
@@ -234,15 +251,24 @@ a:hover img {
   padding-top: 5rem;
   z-index: 2;
   float: left;
-  height: 100%;
-  width: 33.33%;
+  height: 40%;
+  width: 33.25%;
+  border-right: 1px solid #C94F64;
   overflow: hidden;
   position: relative;
+}
+
+.m-column:last-of-type {
+  border: none;
 }
 
 .m-column h3 {
   text-align: left;
   padding-bottom: 2rem;
+}
+
+.column-text {
+  padding-left: 1.5rem;
 }
 
 /* Section 3: Product Summary */
@@ -366,7 +392,7 @@ select {
 
 select:focus, select:active {
   outline: 0;
-  border-bottom-color: var(---red);
+  border-bottom-color: var(---blue);
 }
 
 .add-cart {
@@ -377,12 +403,12 @@ select:focus, select:active {
   font-family: "trade-gothic-next", sans-serif;
   color: #FFF;
   text-decoration: none;
-  background-color: var(---red);
+  background-color: var(---pink);
   padding: 1rem 10rem;
 }
 
 .add-cart a:hover {
-  background-color: #C94F64;
+  background-color: #F0BCD5;
 }
 
 /* Section 5: Contact */
@@ -539,7 +565,7 @@ input:focus {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: var(---red);
+  background: var(---pink);
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
